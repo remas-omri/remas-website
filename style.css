@@ -1,0 +1,213 @@
+/* استيراد الخطوط */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap');
+
+/* إعدادات عامة */
+body {
+    margin: 0;
+    padding: 0;
+    background: #faf7fb;
+    color: #333;
+    font-family: 'Tajawal', 'Poppins', sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+/* إذا النص إنجليزي */
+:lang(en) {
+    direction: ltr;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* الهيدر */
+.main-header {
+    background: #ffffff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f3e6f7;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #d17ac6;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+nav a.active,
+nav a:hover {
+    color: #d17ac6;
+}
+
+/* المحتوى */
+.content {
+    padding: 40px;
+}
+
+/* العناوين */
+h1, h2 {
+    color: #b85bb0;
+}
+
+/* صندوق المشروع */
+.project-box {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 1px solid #f0dff4;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.project-box span {
+    display: block;
+    font-size: 14px;
+    color: #777;
+}
+
+/* القوائم */
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background: #f7eef9;
+    padding: 10px;
+    margin: 6px 0;
+    border-radius: 8px;
+    border-right: 4px solid #d17ac6;
+}
+
+/* الأزرار */
+.btn {
+    background: #d17ac6;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background: #b85bb0;
+}
+
+.btn-secondary {
+    background: #ffffff;
+    border: 2px solid #d17ac6;
+    color: #d17ac6;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.btn-secondary:hover {
+    background: #f7eef9;
+}
+
+/* الصفحة الرئيسية */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 span {
+    color: #d17ac6;
+}
+
+.profile-photo img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;      /* يخلي الصورة دائرية */
+    object-fit: cover;       /* يضبط القص داخل الدائرة */
+    border: 3px solid #f4c2c2; /* إطار وردي ناعم */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* ظل خفيف */
+    display: block;
+    margin: 20px auto;       /* يوسّط الصورة */
+}
+
+
+/* بطاقات الإنجازات */
+.highlights {
+    padding: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #f0dff4;
+    text-align: center;
+}
+
+/* صفحة الشهادات */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.cert-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #f0dff4;
+    text-align: center;
+}
+
+.cert-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* نموذج التواصل */
+.contact-form {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #f0dff4;
+    max-width: 600px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #d8c2dd;
+    font-size: 15px;
+}
+
+/* الفوتر */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    margin-top: 40px;
+    border-top: 2px solid #f3e6f7;
+}
